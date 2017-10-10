@@ -42,7 +42,7 @@ const favoriteThings = {
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
 favoriteThings.car = 'BMW';
-favoriteThings.brand = 'Giuseppe Zanotti';
+favoriteThings.brand = 'Nike';
 
 
 

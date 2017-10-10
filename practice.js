@@ -73,7 +73,7 @@ that is named color, with the value being the color of your backpack.
 const backPack = {}
 var item = 'firstPocket';
 
-backpack[item] = 'chapstick';
+backPack[item] = 'chapstick';
 
 
 
@@ -111,6 +111,7 @@ var user2 = {
         birthday: '05/02/1990',
         username: 'tylermcginnis33'
 };
+
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
@@ -137,8 +138,8 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Create an empty object called methodCollection.
 
-const methodCollection = {};
-
+var methodCollection = {};
+ 
 
 
 
@@ -148,16 +149,19 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  which logs 'hello' to the console. 
  */
 
-  //Code Here
+methodCollection.alertHello = function() {
+  alert('hello');
+}
 
-
-
+methodCollection.logHello = function() {
+  console.log('hello');
+}
 
 
 //Now call your alertHello and logHello methods.
 
-  //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -172,7 +176,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makePerson which takes in name, birthday, ssn as its
 // parameters and returns a new object with all of the information that you passed in.
 
-  //Code Here
+function makePerson(name, birthday, ssn) {
+  return {
+    name,
+    birthday,
+    ssn
+  }
+}
 
 
 
@@ -187,6 +197,12 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
-  //Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return {
+    cardNumber,
+    expirationDate,
+    securityCode
+  }
+}
 
 
